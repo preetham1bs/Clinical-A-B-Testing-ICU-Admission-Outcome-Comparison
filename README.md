@@ -194,22 +194,22 @@ No significant difference in ICU duration was detected (p = 0.142). As with mort
 ## Visualisations
 
 ### 1. Outcome Distributions — Annotated Box Plots
-![Box Plots with p-value annotations](outputs/figures/03_boxplots_annotated.png)
+![Box Plots with p-value annotations](https://github.com/preetham1bs/Clinical-A-B-Testing-ICU-Admission-Outcome-Comparison/blob/5e86cd4a364647987e89a273900500b8e50947d6/outputs/figures/01_distributions.png)
 
 *Box plots with statistical significance annotations. Red = significant result (p < 0.05). Emergency admissions show a wider LOS distribution with a longer right tail — consistent with the right-skewed nature of ICU data.*
 
 ### 2. Confidence Interval Forest Plot
-![Forest plot showing effect estimates and 95% CIs](outputs/figures/04_confidence_intervals.png)
+![Forest plot showing effect estimates and 95% CIs](https://github.com/preetham1bs/Clinical-A-B-Testing-ICU-Admission-Outcome-Comparison/blob/5e86cd4a364647987e89a273900500b8e50947d6/outputs/figures/02_age_distribution.png)
 
 *Forest plot displaying mean differences with 95% bootstrapped confidence intervals. Red bars = significant results (CI excludes zero). Grey bars = non-significant (CI includes zero). Format consistent with published clinical meta-analyses.*
 
 ### 3. Distribution Comparison — Violin + Box
-![Violin plots comparing distributions](outputs/figures/01_distributions.png)
+![Violin plots comparing distributions](https://github.com/preetham1bs/Clinical-A-B-Testing-ICU-Admission-Outcome-Comparison/blob/5e86cd4a364647987e89a273900500b8e50947d6/outputs/figures/03_boxplots_annotated.png)
 
 *Violin plots show full distributional shape — emergency LOS distribution is wider and more right-skewed than elective, explaining why a non-parametric test was required.*
 
 ### 4. Covariate Balance — Age Distribution
-![Age distribution by group](outputs/figures/02_age_distribution.png)
+![Age distribution by group](https://github.com/preetham1bs/Clinical-A-B-Testing-ICU-Admission-Outcome-Comparison/blob/5e86cd4a364647987e89a273900500b8e50947d6/outputs/figures/04_confidence_intervals.png)
 
 *Age distributions confirm the two groups are broadly comparable on this key covariate, supporting the validity of outcome comparisons.*
 
@@ -238,12 +238,8 @@ clinical-ab-test/
 │
 ├── README.md
 │
-├── notebooks/
-│   ├── 01_data_extraction.ipynb       # SQL via MySQL → pandas
-│   ├── 02_eda_and_groups.ipynb        # Group definitions, descriptive stats
-│   ├── 03_assumption_checks.ipynb     # Shapiro-Wilk, Levene's, covariate balance
-│   ├── 04_hypothesis_tests.ipynb      # Mann-Whitney U, Chi-square, effect sizes, CIs
-│   └── 05_results_report.ipynb        # Summary table, all visualisations
+├── notebook/
+│   ├── A-B_testing.ipynb
 │
 ├── sql/
 │   └── extract_groups.sql             # MySQL query to extract both patient groups
